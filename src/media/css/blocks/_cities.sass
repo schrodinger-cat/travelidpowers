@@ -1,0 +1,44 @@
+.cities
+    background-color: #f5f5f5
+    &__wrapper
+        overflow: hidden
+        white-space: nowrap
+        padding-top: 30px
+    &__elem
+        position: relative
+        display: inline-block
+        vertical-align: top
+        overflow: hidden
+        margin-right: 30px
+        width: 350px
+        height: 234px
+        cursor: pointer
+        +cover
+        &:hover
+            .cities__frame
+                width: 316px
+                height: 200px
+            .cities__text-wrap
+                opacity: 1
+    &__frame
+        position: absolute
+        width: 110%
+        height: 110%
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        transition: width .5s, height .5s
+        border: 2px solid #fff
+        opacity: .5
+    &__text-wrap
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        opacity: 0
+        transition: opacity .7s
+    &__text
+        color: #fff
+        text-align: center
+        font-size: 14px
+        line-height: 22px
