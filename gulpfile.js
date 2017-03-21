@@ -16,6 +16,7 @@ var del           = require('del');
 var runSequence   = require('run-sequence');
 var postcss       = require('gulp-postcss');
 var autoprefixer  = require('autoprefixer');
+var wait          = require('gulp-wait');
 
 // Development Tasks 
 // -----------------
@@ -38,6 +39,7 @@ gulp.task('sass', function() {
       cssnano
   ];
   return gulp.src('src/media/css/style.sass') // Gets all files ending with .scss in app/scss and children dirs
+    .pipe(wait(500))
     .pipe(sass()) // Passes it through a gulp-sass
     .pipe(postcss(processors))
     .pipe(gulp.dest('build/media/css')) // Outputs it in the css folder
@@ -74,7 +76,7 @@ gulp.task('watch', function() {
   gulp.watch('src/media/css/**/*.sass', ['sass']);
   gulp.watch('src/**/*.jade', ['jade']);
   gulp.watch('src/media/js/**/*.js', ['js']);
-  gulp.watch('src/media/img/**/*.js', ['images']);
+  gulp.watch('src/media/img/**/*.*', ['images']);
 })
 
 // Optimization Tasks 

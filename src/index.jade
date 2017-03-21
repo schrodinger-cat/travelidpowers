@@ -2,7 +2,24 @@
 extends ./templates/head.jade
 
 block title
-	title Custom Page Title
+	title Travel
 
 block content
-	| place some html
+	.wrapper.header
+		.header__social.header-social
+			a(href="#").header-social__elem
+				object(data="media/img/vk-logo.svg", type="image/svg+xml").header-social__icon._vk
+			a(href="#").header-social__elem
+				object(data="media/img/facebook-logo.svg", type="image/svg+xml").header-social__icon._facebook
+			a(href="#").header-social__elem
+				object(data="media/img/twitter-logo.svg", type="image/svg+xml").header-social__icon._twitter
+			a(href="#").header-social__elem
+				object(data="media/img/odnoklassniki-logo.svg", type="image/svg+xml").header-social__icon._ok
+		
+		.header__logo
+			img(src="media/img/logo.png")
+			p.header__slogan Мир, который Вы никогда не видели
+
+		.header__backcall
+			.header__phone +7 (495) 397-00-78
+			.header__phone-text Обратный звонок

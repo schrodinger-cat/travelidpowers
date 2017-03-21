@@ -1,0 +1,76 @@
+.header
+    margin-top: 41px
+    &__social
+        float: left
+        margin-top: 2px
+    &__logo
+        display: inline-block
+        overflow: hidden
+        margin-left: 253px
+        text-align: center
+    &__slogan
+        padding-top: 0
+        margin-top: 12px
+        color: #9c9c9c
+        font-weight: 300
+    &__backcall
+        float: right
+        margin-top: 7px
+        margin-right: 1px
+        text-align: right
+    &__phone
+        font-weight: 500
+        font-size: 20px
+        color: #b8907b
+    &__phone-text
+        position: relative
+        margin-top: 16px
+        color: #485368
+        &::before
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px
+            left: 4px
+            background: url('../img/phone.svg') no-repeat
+
+.header-social
+    font-size: 0
+    &__elem
+        position: relative
+        display: inline-block
+        vertical-align: top
+        margin-right: 5px
+        width: 36px
+        height: 36px
+        background-color: #d6ae9a
+        transition: background-color .3s
+        &:hover
+            background-color: darken(#d6ae9a, 10%)
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+        &:first-child
+            margin-right: 6px
+    &__icon
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        &._vk
+            width: 26px
+            height: 19px
+        &._facebook
+            width: 16px
+            height: 24px
+        &._twitter
+            left: 53%
+            width: 17px
+            height: 15px
+        &._ok
+            width: 15px
+            height: 21px
