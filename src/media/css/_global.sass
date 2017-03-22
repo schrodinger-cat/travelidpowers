@@ -2,6 +2,11 @@ body
     background-color: #fff
     color: #485368
     +ubuntu
+    &._noscroll
+        overflow-y: hidden
+    +min-screen(768px)
+        &._noscroll
+            overflow-y: auto
 
 a
     color: #485368
@@ -11,5 +16,7 @@ a
         color: #a07762
 
 .wrapper
-    width: 1110px
-    margin: auto
+    width: 100%
+    +min-screen(1110px)
+        width: 1110px
+        margin: auto

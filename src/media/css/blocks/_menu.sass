@@ -1,21 +1,51 @@
 .menu
-    margin-top: 15px
+    position: absolute
+    width: 100%
+    top: 59px
+    left: 0
+    height: 0
     overflow: hidden
-    padding: 7px 0
-    border-top: 2px solid #eeeeee
     font-size: 0
+    background-color: #f5f5f5
+    z-index: 10
+    &__wrap
+        padding-top: 18px
     &__elem
-        display: inline-block
-        vertical-align: top
-        margin-right: 71px
-        font-size: 19px
+        display: block
+        text-align: center
+        font-size: 24px
         font-weight: 300
         text-transform: uppercase
-        line-height: 45px
         letter-spacing: 1px
-        &:last-child
-            margin-right: 0
+        line-height: 60px
         &:first-child
             margin-left: 6px
         &._active
             color: #a07762
+    +min-screen(720px)
+        position: static
+        border-top: 2px solid #eeeeee
+        margin-top: 15px
+        padding: 7px 0
+        height: auto!important
+        background-color: #fff
+        &__wrap
+            padding-top: 0
+            text-align: center
+        &__elem
+            display: inline-block
+            vertical-align: top
+            margin-right: 22px
+            text-align: left
+            font-size: 16px
+            line-height: 45px
+            &:last-child
+                margin-right: 0
+    +min-screen(1100px)
+        &__elem
+            display: inline-block
+            vertical-align: top
+            margin-right: 71px
+            text-align: left
+            font-size: 19px
+            line-height: 45px

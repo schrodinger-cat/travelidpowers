@@ -17,15 +17,23 @@ block content
 				object(data="media/img/odnoklassniki-logo.svg", type="image/svg+xml").header-social__icon._ok
 		
 		.header__logo
-			img(src="media/img/logo.png", alt="Travel")
+			img.header__image(src="media/img/logo.png", alt="Travel")
 			p.header__slogan Мир, который Вы никогда не видели
 
 		.header__backcall
 			.header__phone +7 (495) 397-00-78
 			.header__phone-text Обратный звонок
+		
+		.header__menu-opener._close(data-menu-opener)
+			.header__line._top
+			.header__line._middle
+			.header__line._bottom
+		
+		object.header__callicon(data="media/img/phone.svg", type="image/svg+xml")
+
 	
-	.menu
-		.wrapper
+	.menu(data-menu)
+		.wrapper.menu__wrap
 			a(href="#").menu__elem._active Главная
 			a(href="#").menu__elem О проекте
 			a(href="#").menu__elem Туры
@@ -35,10 +43,24 @@ block content
 			a(href="#").menu__elem Контакты
 
 	.slider
-		.slider__elem
-			.slider__wrap
-				.slider__title Discover
-				.slider__text мир, который вы никогда не видели
+		.slider__slider
+			.slider__arrows
+				.slider__prev(data-slider-prev)
+					object.slider__icon(data="media/img/arrow.svg", type="image/svg+xml")
+				.slider__next(data-slider-next)
+					object.slider__icon(data="media/img/arrow.svg", type="image/svg+xml")
+			.slider__elem(data-slide="1", data-slide-image="slide01.jpg")
+				.slider__wrap
+					.slider__title Discover
+					.slider__text мир, который вы никогда не видели
+			.slider__elem(data-slide="2", data-slide-image="slide02.jpg")
+				.slider__wrap
+					.slider__title Discover
+					.slider__text мир, который вы никогда не видели
+			.slider__elem(data-slide="3", data-slide-image="slide03.jpg")
+				.slider__wrap
+					.slider__title Discover
+					.slider__text мир, который вы никогда не видели
 
 	.cities
 		.wrapper.cities__wrapper
