@@ -1,0 +1,83 @@
+.countries
+    padding-top: 223px
+    background-color: #fff
+    margin-top: -117px
+    overflow: hidden
+    &__left
+        float: left
+    &__title
+        margin-top: 26px
+        margin-left: -1px
+        color: #b8907b
+        text-transform: uppercase
+        font-weight: 500
+        font-size: 48px
+    &__line
+        margin-top: 20px
+        margin-bottom: 32px
+        width: 30px
+        height: 2px
+        background-color: #b8907b
+    &__text
+        width: 540px
+        margin-left: -2px
+        line-height: 26px
+        font-size: 16px
+        font-weight: 300
+    &__subtext
+        margin-top: 26px
+        color: #9c9c9c
+    &__more
+        display: inline-block
+        margin-top: 36px
+        margin-bottom: 100px
+        padding: 0 33px
+        border: 2px solid #485368
+        transition: border .3s
+        line-height: 34px
+        font-weight: 400
+        +br(20px)
+        &:hover
+            border: 2px solid #b8907b
+    &__right
+        float: right
+        padding-top: 89px
+    &__image-wrap
+        position: relative
+        &::before, &::after
+            content: ''
+            position: absolute
+            width: 270px
+            height: 100px
+            border: 10px solid #f3f3f3
+            left: 40px
+            +box
+        &::before
+            top: -85px
+        &::after
+            bottom: -83px
+    &__image
+        position: relative
+        z-index: 10
+
+.countries-menu
+    column-count: 4
+    column-width: 174px
+    &__elem
+        position: relative
+        display: block
+        margin-bottom: 8px
+        padding-left: 17px
+        font-weight: 300
+        +box
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 6px
+            width: 4px
+            height: 4px
+            border: 2px solid #bc9682
+            +br(50%)
+        &:hover
+            color: #b8907b
