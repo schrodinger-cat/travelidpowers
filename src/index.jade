@@ -63,22 +63,37 @@ block content
 					.slider__text мир, который вы никогда не видели
 
 	.cities
+		//- .cities__arrows
+		//- 	.cities__prev(data-cities-prev)
+		//- 		object.cities__icon(data="media/img/arrow.svg", type="image/svg+xml")
+		//- 	.cities__next(data-cities-next)
+		//- 		object.cities__icon(data="media/img/arrow.svg", type="image/svg+xml")
 		.wrapper.cities__wrapper
-			.cities__elem(style="background: url('media/img/cities01.jpg'); background-size:cover", data-carousel-elem)
-				.cities__frame
-				.cities__text-wrap
-					.cities__text Шоппинг в Париже!
-					.cities__text Тебе понравится это!
-			.cities__elem(style="background: url('media/img/cities02.jpg'); background-size:cover", data-carousel-elem)
-				.cities__frame
-				.cities__text-wrap
-					.cities__text Парусный спорт в Стокгольме!
-					.cities__text Тебе понравится это!
-			.cities__elem(style="background: url('media/img/cities03.jpg'); background-size:cover", data-carousel-elem)
-				.cities__frame
-				.cities__text-wrap
-					.cities__text Каякинг в Норвегии!
-					.cities__text Тебе понравится это!
+			.cities__prev(data-cities-prev)
+				object.cities__icon(data="media/img/arrow.svg", type="image/svg+xml")
+			.cities__next(data-cities-next)
+				object.cities__icon(data="media/img/arrow.svg", type="image/svg+xml")
+			.cities__container(data-cities)
+				.cities__elem(style="background: url('media/img/cities01.jpg'); background-size:cover", data-carousel-elem)
+					.cities__frame
+					.cities__text-wrap
+						.cities__text Шоппинг в Париже!
+						.cities__text Тебе понравится это!
+				.cities__elem(style="background: url('media/img/cities02.jpg'); background-size:cover", data-carousel-elem)
+					.cities__frame
+					.cities__text-wrap
+						.cities__text Парусный спорт в Стокгольме!
+						.cities__text Тебе понравится это!
+				.cities__elem(style="background: url('media/img/cities03.jpg'); background-size:cover", data-carousel-elem)
+					.cities__frame
+					.cities__text-wrap
+						.cities__text Каякинг в Норвегии!
+						.cities__text Тебе понравится это!
+				.cities__elem(style="background: url('media/img/cities02.jpg'); background-size:cover", data-carousel-elem)
+					.cities__frame
+					.cities__text-wrap
+						.cities__text Парусный спорт в Стокгольме!
+						.cities__text Тебе понравится это!
 
 	.countries
 		.wrapper
@@ -140,19 +155,16 @@ block content
 						object(data="media/img/odnoklassniki-logo.svg", type="image/svg+xml").header-social__icon._ok
 					
 				.bottom__menu.bottom-menu
-					.bottom-menu__group
-						a.bottom-menu__link(href="#") Главная
-						a.bottom-menu__link(href="#") О проекте
-						a.bottom-menu__link(href="#") Туры
-					.bottom-menu__group
-						a.bottom-menu__link(href="#") Страны
-						a.bottom-menu__link(href="#") Блог
-						a.bottom-menu__link(href="#") Сотрудничество
-					.bottom-menu__group
-						a.bottom-menu__link(href="#") Контакты
+					a.bottom-menu__link(href="#") Главная
+					a.bottom-menu__link(href="#") О проекте
+					a.bottom-menu__link(href="#") Туры
+					a.bottom-menu__link(href="#") Страны
+					a.bottom-menu__link(href="#") Блог
+					a.bottom-menu__link(href="#") Сотрудничество
+					a.bottom-menu__link(href="#") Контакты
 
 			.bottom__wrap
-				.bottom__copyright © 2017 Travel
 				.bottom__adress г. Москва, ст. метро Кузьминки, Волжский бульвар, д.37, корп.1.
+				.bottom__copyright © 2017 Travel
 				a.bottom__logo(href="#")
 					img(src="media/img/id-logo.png", alt="")

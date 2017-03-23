@@ -1,45 +1,105 @@
 .bottom
-    padding-top: 77px
+    padding-top: 40px
     background-color: #485368
     overflow: hidden
     &__top
         overflow: hidden
     &__social
-        margin-top: 2px
-        margin-left: -1px
+        display: block
+        width: 283px
+        margin: 0 auto
+        +box
     &__menu
-        float: right
+        //float: right
     &__wrap
         overflow: hidden
-        padding-top: 59px
+        padding-top: 51px
         padding-bottom: 42px
         color: #b4bbca
         font-size: 14px
         font-weight: 300
-        text-align: center
+        text-align: left
     &__copyright
         float: left
-        margin-top: 7px
+        margin-top: 50px
+        margin-left: 20px
     &__adress
-        display: inline-block
-        margin-top: 6px
-        margin-left: -8px
+        display: block
+        width: 80%
+        padding-left: 20px
+        line-height: 24px
     &__logo
         float: right
+        margin-top: 43px
+        margin-right: 20px
+    +min-screen(768px)
+        &__social
+            margin-left: 20px
+    +min-screen(1110px)
+        padding-top: 77px
+        &__wrap
+            padding-top: 59px
+            text-align: center
+        &__social
+            margin-top: 2px
+            margin-left: -1px
+        &__adress
+            display: inline-block
+            width: auto
+            text-align: center
+            margin-top: 3px
+            margin-left: -25px
+        &__copyright
+            margin-top: 7px
+            margin-left: 0
+        &__logo
+            margin-top: 0
+            margin-right: 0
 
 .bottom-menu
+    column-count: 2
+    margin-top: 49px
+    width: 284px
     &__group
         display: inline-block
         vertical-align: top
-        width: 285px
+        width: 50%
         &:last-child
             width: 161px
     &__link
-        margin-bottom: 8px
-        float: left
-        clear: left
+        display: block
+        margin-bottom: 18px
+        margin-left: 20px
+        // float: left
+        // clear: left
         color: #fff
         font-size: 14px
-        flex-wrap: 300
+        font-weight: 300
         &:hover
             color: #adadad
+        &:first-child
+            margin-top: 8px
+        &:nth-child(4)
+            margin-bottom: 8px
+    +min-screen(768px)
+        padding-top: 49px
+        clear: both
+    +min-screen(1110px)
+        padding-top: 0
+        column-count: 3
+        width: 837px
+        margin: 0 -107px 0 0
+        float: right
+        clear: none
+        &__link
+            &:first-child
+                margin-top: 0
+            &:nth-child(6)
+                margin-bottom: 30px
+        &__group
+            width: 285px
+            &:last-child
+                width: 161px
+        &__link
+            margin-left: 0
+            margin-bottom: 8px
