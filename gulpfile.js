@@ -122,7 +122,7 @@ gulp.task('clean:build', function() {
 // ---------------
 
 gulp.task('default', function(callback) {
-  runSequence(['jade', 'sass', 'js', 'images', 'browserSync', 'watch'],
+  runSequence(['jade', 'sass', 'js', 'images', 'fonts','browserSync', 'watch'],
     callback
   )
 })
@@ -133,7 +133,8 @@ gulp.task('build', function(callback) {
     'sass',
     'jade',
     'js',
-    ['useref', 'images', 'fonts'],
+    'fonts'
+    ['useref', 'images'],
     callback
   )
 })
