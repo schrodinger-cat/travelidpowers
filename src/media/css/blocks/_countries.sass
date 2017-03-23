@@ -1,75 +1,129 @@
 .countries
-    display: none
-    padding-top: 223px
+    padding-top: 46px
     background-color: #fff
-    margin-top: -117px
     overflow: hidden
     &__left
-        float: left
+        width: 95%
     &__title
-        margin-top: 26px
-        margin-left: -1px
+        margin-top: 22px
+        margin-left: 20px
         color: #b8907b
         text-transform: uppercase
         font-weight: 500
-        font-size: 48px
+        font-size: 36px
     &__line
-        margin-top: 20px
-        margin-bottom: 32px
+        margin-top: 12px
+        margin-left: 21px
+        margin-bottom: 13px
         width: 30px
         height: 2px
         background-color: #b8907b
     &__text
-        width: 540px
-        margin-left: -2px
-        line-height: 26px
-        font-size: 16px
+        width: 90%
+        margin-left: 20px
+        line-height: 24px
+        font-size: 14px
         font-weight: 300
+        +box
     &__subtext
-        margin-top: 26px
+        margin-top: 25px
         color: #9c9c9c
     &__more
         display: inline-block
-        margin-top: 36px
-        margin-bottom: 100px
-        padding: 0 33px
+        margin-top: 30px
+        margin-bottom: 48px
+        padding: 0 29px
         border: 2px solid #485368
         transition: border .3s
-        line-height: 34px
+        line-height: 30px
         font-weight: 400
+        font-size: 14px
         +br(20px)
         &:hover
             border: 2px solid #b8907b
     &__right
-        float: right
+        overflow: hidden
         padding-top: 89px
+        text-align: center
     &__image-wrap
         position: relative
+        margin-bottom: 134px
         &::before, &::after
             content: ''
             position: absolute
-            width: 270px
+            width: 246px
             height: 100px
+            left: 50%
+            transform: translate(-50%)
             border: 10px solid #f3f3f3
-            left: 40px
             +box
         &::before
-            top: -85px
+            top: -78px
         &::after
-            bottom: -83px
+            bottom: -75px
     &__image
         position: relative
+        height: 215px
         z-index: 10
+    +min-screen(768px)
+    +min-screen(1110px)
+        padding-top: 223px
+        margin-top: -117px
+        &__left
+            float: left
+            width: auto
+            margin-right: 15px
+        &__title
+            margin-top: 26px
+            margin-left: -1px
+            font-size: 48px
+        &__line
+            margin-top: 20px
+            margin-bottom: 32px
+            margin-left: 0
+        &__text
+            width: 540px
+            margin-left: -2px
+            line-height: 26px
+            font-size: 16px
+        &__subtext
+            margin-top: 26px
+        &__more
+            margin-top: 36px
+            margin-bottom: 100px
+            padding: 0 33px
+            line-height: 34px
+            font-size: 16px
+        &__right
+            text-align: left
+            padding-top: 89px
+            margin-left: 4px
+        &__image-wrap
+            position: relative
+            &::before, &::after
+                left: 40px
+                width: 270px
+                height: 100px
+                transform: translate(0)
+                +box
+            &::before
+                top: -83px
+            &::after
+                bottom: -83px
+        &__image
+            height: auto
+        
 
 .countries-menu
-    column-count: 4
-    column-width: 174px
+    column-count: 2
+    padding-left: 20px
     &__elem
         position: relative
         display: block
-        margin-bottom: 8px
+        margin-bottom: 18px
         padding-left: 17px
         font-weight: 300
+        font-size: 14px
         +box
         &::before
             content: ''
@@ -82,3 +136,12 @@
             +br(50%)
         &:hover
             color: #b8907b
+    +min-screen(768px)
+        column-count: 4
+        column-width: 174px
+        &__elem
+            display: block
+            margin-bottom: 8px
+            font-size: 16px
+    +min-screen(1110)
+        padding-left: 0

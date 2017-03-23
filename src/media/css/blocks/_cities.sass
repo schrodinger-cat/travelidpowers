@@ -1,25 +1,24 @@
 .cities
-    display: none
-    background-color: #f5f5f5
+    background-color: #fff
     overflow: hidden
     &__wrapper
         overflow: hidden
         white-space: nowrap
-        padding-top: 30px
+        padding-top: 10px
     &__elem
         position: relative
         display: inline-block
         vertical-align: top
         overflow: hidden
-        margin-right: 30px
-        width: 350px
-        height: 234px
+        margin-right: 10px
+        width: 211px
+        height: 140px
         cursor: pointer
         +cover
         &:hover
             .cities__frame
-                width: 316px
-                height: 200px
+                width: 190px
+                height: 120px
             .cities__text-wrap
                 opacity: 1
     &__frame
@@ -42,5 +41,20 @@
     &__text
         color: #fff
         text-align: center
-        font-size: 14px
+        font-size: 10px
         line-height: 22px
+    +min-screen(768px)
+        background-color: #f5f5f5
+        &__wrapper
+            padding-top: 30px
+        &__elem
+            width: 350px
+            height: 234px
+            margin-right: 30px
+            &:hover
+                .cities__frame
+                    width: 316px
+                    height: 200px
+        &__text
+            font-size: 14px
+    +min-screen(1100px)
