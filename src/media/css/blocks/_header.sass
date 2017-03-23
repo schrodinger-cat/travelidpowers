@@ -6,14 +6,32 @@
         display: none
     &__logo
         display: inline-block
-        overflow: hidden
+        // overflow: hidden
         text-align: center
     &__image
         width: 100px
+    &__logotext
+        position: relative
+        margin-top: -5px
+        font-size: 27px
+        color: #485368
+        text-transform: uppercase
+        font-family: 'ProximaNovaExCnBold'
+        &::before, &::after
+            content: ''
+            position: absolute
+            top: 44%
+            width: 13px
+            height: 1px
+            background-color: #485368 
+        &::before
+            left: -17px
+        &::after
+            right: -17px
     &__slogan
         display: none
         padding-top: 0
-        margin-top: 12px
+        margin-top: 0px
         color: #9c9c9c
         font-weight: 300
     &__backcall
@@ -84,6 +102,16 @@
         &__social
             float: left
             margin-top: 2px
+        &__logotext
+            margin-top: -12px
+            font-size: 60px
+            &::before, &::after
+                width: 30px
+                height: 2px
+            &::before
+                left: 27px
+            &::after
+                right: 25px
         &__image
             width: auto
         &__slogan, &__backcall, &__social

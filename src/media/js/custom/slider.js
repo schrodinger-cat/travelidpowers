@@ -6,7 +6,7 @@ $slide.each(function(element) {
     var slideImage = $this.attr('data-slide-image');
     var slideCount = $this.attr('data-slide');
 
-    TweenMax.set($this, {background: 'url("media/img/'+ slideImage +'") no-repeat center', backgroundSize: 'cover'});
+    TweenMax.set($this, {background: 'url("media/img/'+ slideImage +'") no-repeat center'});
 
     if(slideCount > 1) {
         TweenMax.set($this, {autoAlpha: 0});
